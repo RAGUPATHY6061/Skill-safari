@@ -303,7 +303,7 @@
   background-color: #dc3545;
   color: #fff;
   border: none; 
-  border-radius: 5px;
+  border-radius: 5px; 
   cursor: pointer;
   font-size: 14px;
 }
@@ -444,12 +444,346 @@
     margin: 100px 50px 30px 50px;
   }
 }
+/* Original CSS */
 
-@media screen and (min-width: 993px) {
-  .container {
-    margin: 10px 70px 0;
+/* ... (existing CSS rules) ... */
+
+/* Responsive CSS */
+
+/* Small screens */
+@media screen and (max-width: 480px) {
+  .desc {
+    margin-top: 30px;
+    font-size: 24px;
   }
-  .board1 {
-    margin: 200px 0 30px 50px;
+
+  .container2 {
+    margin: 30px 0;
+  }
+
+  .main-cont {
+    width: 100%;
+    padding: 8px;
+  }
+
+  .main-cont img {
+    height: auto;
+    width: 100%;
+  }
+
+  .product_img {
+    margin-bottom: 10px;
+  }
+
+  .topBanner {
+    padding: 6px;
+    font-size: 12px;
+  }
+
+  .bottom h6 {
+    font-size: 14px;
   }
 }
+
+/* Medium screens */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .desc {
+    margin-top: 50px;
+    font-size: 32px;
+  }
+
+  .container2 {
+    margin: 50px 0;
+  }
+
+  .main-cont {
+    width: calc(50% - 10px);
+    padding: 12px;
+  }
+
+  .main-cont img {
+    height: 200px;
+    width: 100%;
+  }
+
+  .product_img {
+    margin-bottom: 15px;
+  }
+
+  .topBanner {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .bottom h6 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .more {
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .more-txt {
+      margin: 40px 0 20px 0;
+      font-size: 30px;
+  }
+  
+  .para1 {
+      margin: 20px 10px;
+      font-size: 18px;
+  }
+  
+  .more-img {
+      margin-top: 20px;
+  }
+  
+  .button1 {
+      margin-top: 20px;
+      text-align: center;
+  }
+  
+  .btn-1,
+  .btn-2 {
+      width: 100%;
+  }
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+  .more-txt {
+      margin: 30px 0 10px 0;
+      font-size: 24px;
+  }
+  
+  .para1 {
+      margin: 15px 10px;
+      font-size: 16px;
+  }
+  
+  .more-img {
+      margin-top: 10px;
+  }
+  
+  .button1 {
+      margin-top: 15px;
+      text-align: center;
+  }
+  
+  .btn-1,
+  .btn-2 {
+      width: 100%;
+      font-size: 14px;
+      padding: 12px;
+  }
+}
+/* Original styles... */
+
+/* Media Query for Tablets */
+@media (max-width: 768px) {
+  .main-card {
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .card {
+      width: 80%; /* Adjust as needed */
+      margin: 10px 0;
+  }
+  
+  .card-body p {
+      font-size: 18px;
+  }
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+  .main-card {
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .card {
+      width: 90%; /* Adjust as needed */
+      margin: 10px 0;
+  }
+  
+  .card-body p {
+      font-size: 16px;
+  }
+}
+
+/* Rest of your existing code... */
+/* Original styles... */
+
+/* Media Query for Tablets */
+@media (max-width: 768px) {
+  .main-balloon {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      height: auto;
+      padding: 20px;
+  }
+  
+  .balloon-img img {
+      margin: 20px 0;
+      height: auto;
+      max-width: 100%;
+  }
+  
+  .balloon-cont {
+      margin: 20px 0;
+      text-align: center;
+  }
+  
+  .balloon-btn1,
+  .balloon-btn2 {
+      margin-top: 20px;
+      width: 100%;
+  }
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+  .main-balloon {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      height: auto;
+      padding: 20px;
+  }
+  
+  .balloon-img img {
+      margin: 20px 0;
+      height: auto;
+      max-width: 100%;
+  }
+  
+  .balloon-txt {
+      font-size: 32px;
+  }
+  
+  .balloon-cont {
+      margin: 20px 0;
+      text-align: center;
+  }
+  
+  .balloon-btn1,
+  .balloon-btn2 {
+      margin-top: 20px;
+      width: 100%;
+  }
+}
+
+/* Rest of your existing code... */
+/* Original styles... */
+
+/* Media Query for Tablets */
+@media (max-width: 768px) {
+  .map {
+      margin: 30px 0 0 0;
+  }
+  
+  .contact {
+      margin: 30px 0 0 0;
+  }
+  
+  .forms-btn {
+      width: 40%;
+      font-size: 12px;
+  }
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+  .map {
+      margin: 20px 0 0 0;
+      height: 300px;
+  }
+  
+  .contact {
+      margin: 20px 0 0 0;
+      font-size: 18px;
+  }
+  
+  .forms {
+      padding: 10px;
+  }
+  
+  .forms-cont {
+      margin-bottom: 15px;
+  }
+  
+  .forms-btn {
+      width: 50%;
+      font-size: 12px;
+  }
+  
+  .forms-btn1 {
+      margin-top: 10px;
+  }
+}
+
+/* Rest of your existing code... */
+/* Original styles... */
+
+/* Media Query for Tablets */
+@media (max-width: 768px) {
+  .container3,
+  .container4,
+  .container5 {
+      margin-top: 40px;
+  }
+  
+  .container5 {
+      margin: 20px 0 20px 20px;
+  }
+  
+  .c1,
+  .c2,
+  .c3,
+  .c4 {
+      width: 100%;
+  }
+  
+  .balloon-btn3 {
+      width: 100px;
+      padding: 8px;
+      font-size: 14px;
+  }
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+  .container3,
+  .container4,
+  .container5 {
+      margin-top: 30px;
+      margin-bottom: 20px;
+  }
+  
+  .container5 {
+      margin: 10px 0 10px 10px;
+      line-height: 1.8;
+  }
+  
+  .c1,
+  .c2,
+  .c3,
+  .c4 {
+      width: 100%;
+  }
+  
+  .balloon-btn3 {
+      width: 120px;
+      padding: 8px;
+      font-size: 13px;
+  }
+}
+
+/* Rest of your existing code... */
+
+
+
