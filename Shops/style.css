@@ -273,8 +273,11 @@
   height: 500px; 
   margin:60px 0 0 50px;
   width: 90%;
-  overflow: hidden;
   box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.google-map iframe{
+  width:700px;
+   height:500px;
 }
 .contact{ 
   margin:60px 0 0 50px;
@@ -286,7 +289,7 @@
   width: 100%;
   flex-direction: column;
   padding: 15px;
-  background-color: white;
+  background-color: white; 
  
 } 
 .forms-cont{ 
@@ -338,50 +341,50 @@
   font-size: 16px;
   font-weight: 500;
 }
-.container3{
+.container3 {
   margin-top: 60px;
   margin-bottom: 30px;
-  height: 330px;
   background: rgb(37, 36, 36);
-  color: white;  
-  display: flex;    
+  color: white;
+  display: flex;
   flex-direction: column;
-} 
-.container4{
-  margin-top: 60px;
-  display: flex;  
-  justify-content: center; 
-} 
-.container5{
-  margin: 20px 0 20px 100px; 
+  align-items: center;
+  padding: 20px;
+  justify-content: center;
+}
+
+.container4 {
+  display: flex;
+  justify-content: center;
+}
+
+.container5 {
+  margin: 20px 0;
   line-height: 2;
-  display: flex; 
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
-.c1{
-  width: 300px;
+.c1,
+.c2,
+.c3,
+.c4 {
+  flex: 1;
+  max-width: 400px;
+  margin: 20px;
+  text-align: center;
 }
-.c2{ 
-  width: 300px;                                                                                                 
-  display: flex; 
-  flex-direction: column;
-}  
-.c3{
-  width: 300px;
-} 
-.c4{
-  width: 300px;
-}
-.balloon-btn3{
+.balloon-btn3 {
   cursor: pointer;
-  background-color: #c4689b ;
-    color: white;
-    width: 150px;
-    padding: 10px;  
-    text-transform: uppercase;
-    border-style: none;  
-    font-size: 15px;   
-}  
+  background-color: #c4689b;
+  color: white;
+  width: 100%;
+  padding: 10px;
+  text-transform: uppercase;
+  border: none;
+  font-size: 15px;
+}
 
 @media screen and (max-width: 576px) {
   .container {
@@ -676,114 +679,99 @@
       width: 100%;
   }
 }
-
-/* Rest of your existing code... */
 /* Original styles... */
 
 /* Media Query for Tablets */
 @media (max-width: 768px) {
   .map {
-      margin: 30px 0 0 0;
+      flex-direction: column;
+      margin: 20px 0;
+      height: auto;
+      width: 100%;
+  }
+  
+  .google-map iframe {
+      width: 100%;
+      height: 400px;
   }
   
   .contact {
-      margin: 30px 0 0 0;
+      margin: 20px 0;
   }
   
-  .forms-btn {
-      width: 40%;
-      font-size: 12px;
+  .forms {
+      margin-top: 20px;
   }
+  
+  .forms-cont {
+      width: 100%;
+      margin: 10px 0;
+  }
+  
+  .forms-btn1 {
+      text-align: center;
+  }
+  
+  /* Other tablet-specific responsive styles... */
 }
 
 /* Media Query for Mobile Devices */
 @media (max-width: 480px) {
   .map {
-      margin: 20px 0 0 0;
+      flex-direction: column;
+      margin: 20px 0;
+      height: auto;
+      width: 100%;
+  }
+  
+  .google-map iframe {
+      width: 100%;
       height: 300px;
   }
   
   .contact {
-      margin: 20px 0 0 0;
-      font-size: 18px;
+      margin: 20px 0;
   }
   
   .forms {
-      padding: 10px;
+      margin-top: 20px;
   }
   
   .forms-cont {
-      margin-bottom: 15px;
-  }
-  
-  .forms-btn {
-      width: 50%;
-      font-size: 12px;
+      width: 100%;
+      margin: 10px 0;
   }
   
   .forms-btn1 {
-      margin-top: 10px;
+      text-align: center;
   }
 }
-
-/* Rest of your existing code... */
-/* Original styles... */
-
-/* Media Query for Tablets */
+/* For Tablets (768px and below) */
 @media (max-width: 768px) {
-  .container3,
-  .container4,
   .container5 {
-      margin-top: 40px;
+    flex-direction: column;
+    align-items: center;
   }
-  
-  .container5 {
-      margin: 20px 0 20px 20px;
-  }
-  
   .c1,
   .c2,
   .c3,
   .c4 {
-      width: 100%;
-  }
-  
-  .balloon-btn3 {
-      width: 100px;
-      padding: 8px;
-      font-size: 14px;
+    flex-basis: 100%;
+    max-width: 100%;
+    text-align: center;
   }
 }
 
-/* Media Query for Mobile Devices */
+/* For Mobile Devices (480px and below) */
 @media (max-width: 480px) {
-  .container3,
-  .container4,
+  .container3 {
+    padding: 10px;
+  }
+  .container4 {
+    display: block;
+    text-align: center;
+  }
   .container5 {
-      margin-top: 30px;
-      margin-bottom: 20px;
-  }
-  
-  .container5 {
-      margin: 10px 0 10px 10px;
-      line-height: 1.8;
-  }
-  
-  .c1,
-  .c2,
-  .c3,
-  .c4 {
-      width: 100%;
-  }
-  
-  .balloon-btn3 {
-      width: 120px;
-      padding: 8px;
-      font-size: 13px;
+    margin: 10px 0;
   }
 }
-
-/* Rest of your existing code... */
-
-
-
