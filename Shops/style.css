@@ -283,23 +283,22 @@
   margin:60px 0 0 50px;
   font-weight: bold;
 }
-.forms{
+.forms {
   margin-top: 40px;
   display: flex;
   width: 100%;
   flex-direction: column;
   padding: 15px;
   background-color: white; 
- 
 } 
-.forms-cont{ 
+.forms-cont {
   padding: 10px;
   border: 1px solid #5a5a5a;
   margin-bottom: 25px; 
   font-size: 16px;
   width: 100%;
 }
-.forms-btn{
+.forms-btn {
   cursor: pointer;
   padding: 10px 20px;
   width: 25%; 
@@ -307,14 +306,30 @@
   color: #fff;
   border: none; 
   border-radius: 5px; 
-  cursor: pointer;
+  cursor: pointer; 
   font-size: 14px;
 }
-.forms-btn1{
+.forms-btn1 {
   cursor: pointer;
-  margin-top: 0px;
   text-align: center;
 } 
+.forms-cont {
+  border: none;
+  background-color: #f8f9fa;
+}
+.input-data {
+  width: 100%;
+  height: 40px;
+  margin: 0 20px;
+}
+.input-data input, .textarea textarea {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: 17px;
+  outline: none; 
+}
 .test-cont{
   line-height: 1.5;
   width: 100%; 
@@ -385,7 +400,6 @@
   border: none;
   font-size: 15px;
 }
-
 @media screen and (max-width: 576px) {
   .container {
     margin: 10px;
@@ -410,7 +424,6 @@
   }
   .board1 {
     margin: 100px 20px 30px 20px;
-
     h1.welcome-txt {
       font-size: 40px;
     }
@@ -438,7 +451,6 @@
     width: 100%;
   }
 }
-
 @media screen and (min-width: 577px) and (max-width: 992px) {
   .container {
     margin: 10px 40px;
@@ -447,13 +459,6 @@
     margin: 100px 50px 30px 50px;
   }
 }
-/* Original CSS */
-
-/* ... (existing CSS rules) ... */
-
-/* Responsive CSS */
-
-/* Small screens */
 @media screen and (max-width: 480px) {
   .desc {
     margin-top: 30px;
@@ -465,12 +470,12 @@
   }
 
   .main-cont {
-    width: 100%;
+    width: 100%; 
     padding: 8px;
   }
-
+ 
   .main-cont img {
-    height: auto;
+    height:20px;
     width: 100%;
   }
 
@@ -487,8 +492,6 @@
     font-size: 14px;
   }
 }
-
-/* Medium screens */
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .desc {
     margin-top: 50px;
@@ -552,8 +555,6 @@
       width: 100%;
   }
 }
-
-/* Media Query for Mobile Devices */
 @media (max-width: 480px) {
   .more-txt {
       margin: 30px 0 10px 0;
@@ -581,9 +582,6 @@
       padding: 12px;
   }
 }
-/* Original styles... */
-
-/* Media Query for Tablets */
 @media (max-width: 768px) {
   .main-card {
       flex-direction: column;
@@ -591,7 +589,7 @@
   }
   
   .card {
-      width: 80%; /* Adjust as needed */
+      width: 80%;
       margin: 10px 0;
   }
   
@@ -599,16 +597,13 @@
       font-size: 18px;
   }
 }
-
-/* Media Query for Mobile Devices */
 @media (max-width: 480px) {
   .main-card {
       flex-direction: column;
       align-items: center;
-  }
-  
+  }  
   .card {
-      width: 90%; /* Adjust as needed */
+      width: 90%;
       margin: 10px 0;
   }
   
@@ -617,10 +612,6 @@
   }
 }
 
-/* Rest of your existing code... */
-/* Original styles... */
-
-/* Media Query for Tablets */
 @media (max-width: 768px) {
   .main-balloon {
       flex-direction: column;
@@ -647,8 +638,6 @@
       width: 100%;
   }
 }
-
-/* Media Query for Mobile Devices */
 @media (max-width: 480px) {
   .main-balloon {
       flex-direction: column;
@@ -679,9 +668,6 @@
       width: 100%;
   }
 }
-/* Original styles... */
-
-/* Media Query for Tablets */
 @media (max-width: 768px) {
   .map {
       flex-direction: column;
@@ -711,11 +697,7 @@
   .forms-btn1 {
       text-align: center;
   }
-  
-  /* Other tablet-specific responsive styles... */
 }
-
-/* Media Query for Mobile Devices */
 @media (max-width: 480px) {
   .map {
       flex-direction: column;
@@ -746,7 +728,6 @@
       text-align: center;
   }
 }
-/* For Tablets (768px and below) */
 @media (max-width: 768px) {
   .container5 {
     flex-direction: column;
@@ -761,8 +742,6 @@
     text-align: center;
   }
 }
-
-/* For Mobile Devices (480px and below) */
 @media (max-width: 480px) {
   .container3 {
     padding: 10px;
