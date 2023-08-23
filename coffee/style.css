@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#navbar{
+    background: #b2744c;
+}
+#logo img{
+    border-radius: 10px;
+    width: 160px;
+    margin-left: 40px;
+}
+.nav-item{
+    margin-left: 20px;
+}
+.nav-item .nav-link{
+    font-weight: bold;
+}
+#navbar form button{
+    background: black;
+    color: white;
+    border: 1px solid black;
+}
+#home{
+    width: 100%;
+    height: 90vh;
+    background-image: url(./images/bc3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.content{
+    padding-top: 210px;
+    margin-left: 56px;
+  }
+  .content h3{
+    font-size: 50px;
+    color: white;
+  }
+  .content p{
+    margin-top: 10px;
+    color: white;
+  }
+  #btn{
+    width: 150px;
+    height: 36px;
+    margin-top: 20px;
+    background: white;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+  }
+  #about{
+    width: 100%;
+    height: 100vh;
+  }
+  #about .container{
+    padding-top: 70px;
+  }
+  .heading{
+    text-align: center;
+    margin-bottom: 50px;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .heading span{
+    color: #b2744c;
+  }
+  #about .card{
+    border-radius: 10px;
+  }
+  #about .card img{
+    border-radius: 10px;
+  }
+  #about-btn{
+    width: 200px;
+    height: 36px;
+    border: 2px solid #b2744c;
+    color: #b2744c;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .top-cards{
+    width: 100%;
+    height: 60vh;
+    background: #f7f5f2;
+  }
+  .heading2{
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .heading2 span{
+    color: #b2744c;
+  }
+  .top-cards .container{
+    margin-top: 30px;
+  }
+  .top-cards .card{
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  .top-cards .card img{
+    border-radius: 10px;
+  }
+  .top-cards .card h3{
+    text-align: center;
+    padding-top: 78px;
+    color: white;
+  }
+
