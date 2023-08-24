@@ -24,7 +24,7 @@
 }
 #home{
     width: 100%;
-    height: 90vh;
+    height:670px; 
     background-image: url(./images/bc3.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -53,7 +53,7 @@
   }
   #about{
     width: 100%;
-    height: 100vh;
+    height: 700px;
   }
   #about .container{
     padding-top: 70px;
@@ -85,7 +85,7 @@
   }
   .top-cards{
     width: 100%;
-    height: 60vh;
+    height: 400px;
     background: #f7f5f2;
   }
   .heading2{
@@ -102,7 +102,6 @@
   }
   .top-cards .card{
     border-radius: 10px;
-    transition: 0.5s;
     cursor: pointer;
   }
   .top-cards .card img{
@@ -113,4 +112,64 @@
     padding-top: 78px;
     color: white;
   }
-
+  .span{
+    font-weight: bold;
+    color: #b2744c; 
+  }
+  .menu{
+    width: 100%;
+    background: #f7f5f2;
+  }
+  .heading3{
+    text-align: center;
+    font-size: 30px;
+    color: #b2744c;
+    font-weight: bold;
+    border-bottom: 2px solid #b2744c;
+  }
+  #container2{
+    margin-top: 20px;
+  }
+  .menu .card{
+    background: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+  .star i{
+    color: #b2744c;
+  }
+  .menu h3{
+    color: #b2744c;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 25px;
+  }
+  .menu p{
+    font-size: 16px;
+    color: #b2744c;
+    padding-top: 10px;
+  }
+  .menu p span{
+    float: right;
+    cursor: pointer;
+  }
+  #btn{
+    background: #b2744c;
+    color: #000;
+  }
+#footer{
+    background: #f7f5f2;
+    height: 360px;
+}
+.reservation h3{
+    margin: 0 auto;
+    padding: 5px;
+}
+.heading4{
+    text-align: center;
+}
+#footer-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 3px solid black;
+}
