@@ -53,7 +53,7 @@
   }
   #about{
     width: 100%;
-    height: 700px;
+    height: 90vh;
   }
   #about .container{
     padding-top: 70px;
@@ -77,15 +77,29 @@
   #about-btn{
     width: 200px;
     height: 36px;
+    background: transparent;
     border: 2px solid #b2744c;
     color: #b2744c;
     border-radius: 5px;
     font-weight: bold;
     cursor: pointer;
   }
+  @media screen and (max-width:982px){
+    #about p{
+      font-size: 10px;
+    }
+  }
+  @media screen and (max-width:766px){
+    #about p{
+      font-size: 15px;
+    }
+    #about{
+      height: 120vh;
+    }
+  }
   .top-cards{
     width: 100%;
-    height: 400px;
+    height: 60vh;
     background: #f7f5f2;
   }
   .heading2{
@@ -98,7 +112,7 @@
     color: #b2744c;
   }
   .top-cards .container{
-    margin-top: 30px;
+    margin-top: 40px;
   }
   .top-cards .card{
     border-radius: 10px;
@@ -112,43 +126,62 @@
     padding-top: 78px;
     color: white;
   }
+  @media screen and (max-width:767px){
+   .top-cards{
+    height: 170vh;
+   } 
+  }
+  @media screen and (max-width:500px){
+   .top-cards{
+    height: 150vh;
+   } 
+  }
+  @media screen and (max-width:370px){
+   .top-cards{
+    height: 120vh;
+   } 
+  }
   .span{
     font-weight: bold;
     color: #b2744c; 
   }
-  .menu{
-    width: 100%;
+  .menu {
+    
     background: #f7f5f2;
+    font-family: 'Roboto', sans-serif;
+    padding: 50px 0;
   }
-  .heading3{
+  .heading3 {
     text-align: center;
     font-size: 30px;
     color: #b2744c;
     font-weight: bold;
     border-bottom: 2px solid #b2744c;
+    padding-bottom: 15px;
   }
-  #container2{
-    margin-top: 20px;
-  }
-  .menu .card{
+  .menu .card {
+    margin-top: 50px;
     background: white;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 10px;
+    padding: 20px;
   }
-  .star i{
+  .star i {
     color: #b2744c;
   }
-  .menu h3{
+  .menu h3 {
     color: #b2744c;
     text-align: center;
     margin-top: 10px;
     font-size: 25px;
+    font-weight: bold;
   }
-  .menu p{
+  .menu p {
     font-size: 16px;
     color: #b2744c;
-    padding-top: 10px;
+    margin-top: 10px;
   }
-  .menu p span{
+  .menu p span {
     float: right;
     cursor: pointer;
   }
@@ -156,20 +189,21 @@
     background: #b2744c;
     color: #000;
   }
-#footer{
+  #footer {
     background: #f7f5f2;
-    height: 360px;
-}
-.reservation h3{
+    padding: 40px 0;
+  }
+  .reservation h3 {
     margin: 0 auto;
     padding: 5px;
-}
-.heading4{
+  }
+  .heading4 {
     text-align: center;
-}
-#footer-img{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-bottom: 3px solid black;
-}
+  }
+  #footer-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid black;
+    padding-top: 20px;
+  }
