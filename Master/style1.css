@@ -110,53 +110,52 @@ span{
 
 @media (max-width: 768px) {
   .content {
-      margin-top: 40px; /* Adjust margin-top for tablets */
+      margin-top: 40px;
   }
 
   .content h1 {
-      font-size: 30px; /* Reduce font size for tablets */
+      font-size: 30px; 
   }
 
   .image-cont {
-      flex-direction: column; /* Stack images and text vertically on tablets */
-      align-items: center; /* Center-align images and text on tablets */
+      flex-direction: column; 
+      align-items: center; 
   }
 
   .img-src img {
-      width: 100%; /* Make images full width on tablets */
+      width: 100%; 
   }
 
   .img-src h3 {
-      font-weight: 700; /* Reduce font weight for tablets */
+      font-weight: 700; 
   }
 }
 
-/* Mobile styles (adjust as needed) */
 @media (max-width: 480px) {
   .content {
-      margin-top: 20px; /* Adjust margin-top for mobile */
+      margin-top: 20px; 
   }
 
   .content h1 {
-      font-size: 24px; /* Reduce font size for mobile */
-  }
+      font-size: 24px; 
+    }
 
   .image-cont {
-      margin-top: 20px; /* Adjust margin-top for mobile */
+      margin-top: 20px; 
   }
 
   .img-src img {
-      width: 100%; /* Make images full width on mobile */
+      width: 100%;
   }
 
   .img-src h3 {
-      font-weight: 700; /* Reduce font weight for mobile */
-      margin-top: 20px; /* Adjust margin-top for mobile */
+      font-weight: 700; 
+      margin-top: 20px; 
   }
 
   .img-src p {
-      margin-top: 10px; /* Adjust margin-top for mobile */
-      line-height: 1.3; /* Reduce line-height for mobile */
+      margin-top: 10px; 
+      line-height: 1.3; 
   }
 }
 .image-content-wrapper {
@@ -268,31 +267,30 @@ span{
   .span{
     color: black;
   }
-  /* Tablet styles (adjust as needed) */
+
 @media (max-width: 768px) {
   .image-content-wrapper {
-      flex-direction: column; /* Stack content vertically on tablets */
-      align-items: center; /* Center align content on tablets */
-      margin-top: 40px; /* Adjust margin-top for tablets */
+      flex-direction: column; 
+      align-items: center; 
+      margin-top: 40px; 
   }
 
   .image {
       width: 100%;
-      justify-content: center; /* Center align images on tablets */
-      margin-top: 20px; /* Adjust margin-top for tablets */
+      justify-content: center; 
+      margin-top: 20px;
   }
 
   .content3 {
       width: 100%;
-      margin-top: 20px; /* Adjust margin-top for tablets */
-      padding: 40px; /* Reduce padding for tablets */
+      margin-top: 20px; 
+      padding: 40px; 
   }
 
   .content3 h2 {
-      text-align: center; /* Center-align heading on tablets */
-      margin-left: 0; /* Remove left margin on tablets */
+      text-align: center; 
+      margin-left: 0; 
   }
-
   .content3 p {
       text-align: center;
   }
@@ -312,27 +310,27 @@ span{
   }
 }
 
-/* Mobile styles (adjust as needed) */
+
 @media (max-width: 480px) {
   .image-content-wrapper {
-      margin-top: 40px; /* Adjust margin-top for mobile */
+      margin-top: 40px; 
   }
 
   .content3 {
-      padding: 20px; /* Reduce padding for mobile */
+      padding: 20px;
   }
 
   .content3 h2 {
-      font-size: 24px; /* Reduce font size for mobile */
+      font-size: 24px; 
   }
 
   .content3 p {
-      font-size: 16px; /* Reduce font size for mobile */
+      font-size: 16px; 
   }
 
   .btn1 {
-      width: 100%; /* Make button full width on mobile */
-      margin-left: 0; /* Remove left margin on mobile */
+      width: 100%; 
+      margin-left: 0;
   }
 }
   .footer {
@@ -342,13 +340,13 @@ span{
     justify-content: space-around;
     color: white;
     flex-wrap: wrap; 
-    align-items: flex-start; /* Align items to the top of the container */
+    align-items: flex-start; 
 }
 
 .row1 {
     flex: 1;
     padding: 0 20px;
-    margin-bottom: 20px; /* Add spacing between rows */
+    margin-bottom: 20px; 
 }
 
 .row1 h3 {
@@ -368,14 +366,14 @@ span{
 
 .line {
     border-top: 1px solid gray;
-    width: 100%; /* Full width */
-    margin-bottom: 10px; /* Add spacing */
+    width: 100%; 
+    margin-bottom: 10px; 
 }
 
 .footer p {
     text-align: center;
     color: gray;
-    width: 100%; /* Full width */
+    width: 100%; 
 }
 
 @media (max-width: 768px) {
