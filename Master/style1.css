@@ -277,6 +277,7 @@ image container section */
   }
   .span{
     color: black;
+    margin-left: 50px;
   }
 
 @media (max-width: 768px) {
@@ -300,7 +301,6 @@ image container section */
 
   .content3 h2 {
       text-align: center; 
-      margin-left: 0; 
   }
   .content3 p {
       text-align: center;

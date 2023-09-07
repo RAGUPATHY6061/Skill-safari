@@ -352,7 +352,7 @@ span{
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--Seconary-color);
+  color:black;
 }
 .cont p{
     font-weight: bold;
