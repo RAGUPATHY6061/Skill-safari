@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="./css/spinner.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h1>User Profile</h1><hr>
+            <div id="profile-container" class="profile-details">
+                <p><strong>Name:</strong> <span id="profile-name"></span></p>
+                <p><strong>Email:</strong> <span id="profile-email"></span></p>
+                <p><strong>Gender:</strong> <span id="profile-gender"></span></p>
+            </div>
+            <div id="edit-container" class="form"style="display: none;">
+                <hr>
+                <label for="edit-name">Name:</label>
+                <input type="text" id="edit-name" required><br><br>
+                <label for="edit-email">Email:</label>
+                <input type="email" id="edit-email" required><br><br>
+                <label for="edit-gender">Gender:</label>
+                <select id="edit-gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select><br><br>
+            </div>
+            <div class="button-1">
+                <button id="edit-btn">Edit</button>
+                <button id="save-btn" style="display: none;">Save Changes</button>
+                <button><a href="index.html" class="back" >Back</a></button>
+            </div>
+           
+        </div>
+    </div>
+    <script src="./js/profile.js" type="module"></script>
+</html>
