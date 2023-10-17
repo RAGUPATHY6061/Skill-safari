@@ -15,8 +15,8 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const database = getDatabase();
 const auth = getAuth(app);
+
 const storedUserId = localStorage.getItem('userId');
-console.log(storedUserId);
 const userId = storedUserId;
 
 const profileName = document.getElementById("profile-name");
@@ -32,12 +32,11 @@ editBtn.addEventListener('click', () => {
     document.getElementById('edit-name').value = profileName.textContent;
     document.getElementById('edit-email').value = profileEmail.textContent;
     document.getElementById('edit-gender').value = profileGender.textContent;
-    editBtn.style.display='none';
+    editBtn.style.display = 'none';
     saveBtn.style.display = 'block';
 });
 
 saveBtn.addEventListener('click', () => {
-
     const newName = document.getElementById('edit-name').value;
     const newEmail = document.getElementById('edit-email').value;
     const newGender = document.getElementById('edit-gender').value;
@@ -45,22 +44,20 @@ saveBtn.addEventListener('click', () => {
     profileEmail.textContent = newEmail;
     profileGender.textContent = newGender;
 
-    // Update Realtime Database
     set(ref(database, 'users/' + userId), {
         username: newName,
         email: newEmail,
         gender: newGender
     });
 
-    // Update Firebase Authentication data
     const user = auth.currentUser;
     updateProfile(user, {
-        displayName: newName
+        displayName: newName,
+        email: newEmail,
+        gender: newGender,
     }).then(() => {
-        // Update successful.
         console.log("User profile updated successfully.");
     }).catch((error) => {
-        // An error occurred.
         console.log("Error updating user profile:", error);
     });
 
@@ -69,14 +66,6 @@ saveBtn.addEventListener('click', () => {
     saveBtn.style.display = 'none';
     editBtn.style.display = 'block';
 });
-
-function showSpinner() {
-    document.querySelector('.spinner').classList.add('show');
-}
-
-function hideSpinner() {
-    document.querySelector('.spinner').classList.remove('show');
-}
 
 const profileRef = ref(database, 'users/' + userId);
 onValue(profileRef, (snapshot) => {

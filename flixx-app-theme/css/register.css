@@ -76,4 +76,21 @@ body {
   .down a{
     color: #ccc;
   }
+  .alert {
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    position: absolute;
+    top:8%;
+    left: 43%;
+  }
   
+  .success {
+    background: green;
+    color: whitesmoke;
+  }
+  
+  .error {
+    background: red;
+    color: whitesmoke;
+  }

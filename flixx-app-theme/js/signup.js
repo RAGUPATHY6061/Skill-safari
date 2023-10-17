@@ -32,7 +32,7 @@
   const gender = genderField.value;
 
   if (password !== confirm) {
-      alert("Passwords do not match");
+      showAlert("Passwords do not match");
       return;
   }
 
@@ -40,26 +40,42 @@
     .then((userCredential) => {
         const user = userCredential.user;
         console.log("User signed up: " + user.uid);
-        localStorage.setItem('userId', user.uid); // Store the user ID in local storage
-        return saveUserData(user.uid, name, email, gender);
+        localStorage.setItem('userId', user.uid); 
+        return saveUserData(user.uid, name, email, gender,password);
     })
     .then(() => {
-        window.location.href = "index.html";
+        showSuccess("You are Successfully signed up")
+        setTimeout(() =>window.location.href = "index.html" , 1000);
         clearFields();
     })
     .catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message;
-        alert("Error: " + errorCode + " - " + errorMessage);
+        if(errorCode === "auth/invalid-email"){
+            showAlert("Enter the email and password");
+        }
+        else if(errorCode === "auth/missing-password"){
+            showAlert("Enter the password");
+
+        }
+        else if(errorCode === "auth/email-already-in-use"){
+            showAlert("Email already exits");
+        }
+        else if(errorCode === "auth/weak-password"){
+            showAlert("Enter a strong password");
+        }
+        console.log(errorCode);
         clearFields();
+
     });
 });
 
-function saveUserData(userId, name, email, gender) {
+function saveUserData(userId, name, email, gender,password) {
   return set(ref(database, 'users/' + userId), {
       username: name,
       email: email,
-      gender: gender
+      gender: gender,
+      password:password
   });
 }
 
@@ -70,6 +86,20 @@ function saveUserData(userId, name, email, gender) {
      confirmPassword.value = '';
      genderField.value = 'Male'; 
  }
+ function showAlert(message, className = 'error') {
+    const alertEl = document.createElement('div');
+    alertEl.classList.add('alert', className);
+    alertEl.appendChild(document.createTextNode(message));
+    document.querySelector('#alert').appendChild(alertEl);
+    setTimeout(() => alertEl.remove(), 3000);
+  }
 
+  function showSuccess(message, className = 'success') {
+    const alertEl = document.createElement('div');
+    alertEl.classList.add('alert', className);
+    alertEl.appendChild(document.createTextNode(message));
+    document.querySelector('#alert').appendChild(alertEl);
+    setTimeout(() => alertEl.remove(), 1000);
+  }
  
 
