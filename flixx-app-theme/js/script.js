@@ -245,7 +245,7 @@ function backgroundImage(type, backgroundPath){
 
 
 async function fetchAPIData(endpoint){
-    const API_KEY = '3fd2be6f0c70a2a598f084ddfb75487c';
+    const API_KEY = 'a63c6bf4b381c0ca0601252240477a68';
     const API_URL= 'https://api.themoviedb.org/3/';
     showSpinner()
     const res= await fetch(`${API_URL}${endpoint}?api_key=${API_KEY}&language=en-US`)
@@ -257,7 +257,7 @@ async function fetchAPIData(endpoint){
 
 // Make Request To Search
 async function searchAPIData() {
-  const API_KEY = '3fd2be6f0c70a2a598f084ddfb75487c';
+  const API_KEY = 'a63c6bf4b381c0ca0601252240477a68';
   const API_URL= 'https://api.themoviedb.org/3/';
 
   showSpinner();
