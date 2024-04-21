@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#navbar{
+    background: #b2744c;
+}
+#logo img{
+    border-radius: 10px;
+    width: 160px;
+    margin-left: 40px;
+}
+.nav-item{
+    margin-left: 20px;
+}
+.nav-item .nav-link{
+    font-weight: bold;
+}
+#navbar form button{
+    background: black;
+    color: white;
+    border: 1px solid black;
+}
+#home{
+    width: 100%;
+    height:670px; 
+    background-image: url(./images/bc3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.content{
+    padding-top: 210px;
+    margin-left: 56px;
+  }
+  .content h3{
+    font-size: 50px;
+    color: white;
+  }
+  .content p{
+    margin-top: 10px;
+    color: white;
+  }
+  #btn{
+    width: 150px;
+    height: 36px;
+    margin-top: 20px;
+    background: white;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+  }
+  #about{
+    width: 100%;
+    height: 90vh;
+  }
+  #about .container{
+    padding-top: 70px;
+  }
+  .heading{
+    text-align: center;
+    margin-bottom: 50px;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .heading span{
+    color: #b2744c;
+  }
+  #about .card{
+    border-radius: 10px;
+  }
+  #about .card img{
+    border-radius: 10px;
+  }
+  #about-btn{
+    width: 200px;
+    height: 36px;
+    background: transparent;
+    border: 2px solid #b2744c;
+    color: #b2744c;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  @media screen and (max-width:982px){
+    #about p{
+      font-size: 10px;
+    }
+  }
+  @media screen and (max-width:766px){
+    #about p{
+      font-size: 15px;
+    }
+    #about{
+      height: 120vh;
+    }
+  }
+  .top-cards{
+    width: 100%;
+    height: 60vh;
+    background: #f7f5f2;
+  }
+  .heading2{
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .heading2 span{
+    color: #b2744c;
+  }
+  .top-cards .container{
+    margin-top: 40px;
+  }
+  .top-cards .card{
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .top-cards .card img{
+    border-radius: 10px;
+  }
+  .top-cards .card h3{
+    text-align: center;
+    padding-top: 78px;
+    color: white;
+  }
+  @media screen and (max-width:767px){
+   .top-cards{
+    height: 170vh;
+   } 
+  }
+  @media screen and (max-width:500px){
+   .top-cards{
+    height: 150vh;
+   } 
+  }
+  @media screen and (max-width:370px){
+   .top-cards{
+    height: 120vh;
+   } 
+  }
+  .span{
+    font-weight: bold;
+    color: #b2744c; 
+  }
+  .menu {
+    
+    background: #f7f5f2;
+    font-family: 'Roboto', sans-serif;
+    padding: 50px 0;
+  }
+  .heading3 {
+    text-align: center;
+    font-size: 30px;
+    color: #b2744c;
+    font-weight: bold;
+    border-bottom: 2px solid #b2744c;
+    padding-bottom: 15px;
+  }
+  .menu .card {
+    margin-top: 50px;
+    background: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  .star i {
+    color: #b2744c;
+  }
+  .menu h3 {
+    color: #b2744c;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .menu p {
+    font-size: 16px;
+    color: #b2744c;
+    margin-top: 10px;
+  }
+  .menu p span {
+    float: right;
+    cursor: pointer;
+  }
+  #btn{
+    background: #b2744c;
+    color: #000;
+  }
+  #footer {
+    background: #f7f5f2;
+    padding: 40px 0;
+  }
+  .reservation h3 {
+    margin: 0 auto;
+    padding: 5px;
+  }
+  .heading4 {
+    text-align: center;
+  }
+  #footer-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid black;
+    padding-top: 20px;
+  }

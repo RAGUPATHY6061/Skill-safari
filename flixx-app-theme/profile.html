@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="./css/spinner.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div id="alert"></div>
+            <h1>User Profile</h1>
+            <hr>
+            <div id="profile-container" class="profile-details">
+                <p><strong>Name:</strong> <span id="profile-name"></span></p>
+                <p><strong>Email:</strong> <span id="profile-email"></span></p>
+                <p><strong>Gender:</strong> <span id="profile-gender"></span></p>
+                <p><strong>Your Interests:</strong> <span id="profile-interests"></span></p>
+            </div>
+            <div id="edit-container" class="form" style="display: none;">
+                <label for="edit-name">Name:</label>
+                <input type="text" id="edit-name" required><br><br>
+                <label for="edit-email">Email:</label>
+                <input type="email" id="edit-email" required><br><br>
+                <label for="edit-gender">Gender:</label>
+                <select id="edit-gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select><br>
+                <h2>Interests</h2>
+                <div class="interest">
+                    <div class="movie">
+                        <input type="checkbox" id="hollywood" name="interest" value="Hollywood"> Hollywood<br>
+                        <input type="checkbox" id="bollywood" name="interest" value="Bollywood"> Bollywood<br>
+                        <input type="checkbox" id="koreanCinema" name="interest" value="Korean Cinema"> Korean Cinema<br>
+                        <input type="checkbox" id="kollywood" name="interest" value="Kollywood"> Kollywood<br>
+                    </div>
+                    <div class="movie-type">
+                        <input type="radio" id="romance" name="interest" value="Romance"> Romance<br>
+                        <input type="radio" id="action" name="interest" value="Action"> Action<br>
+                        <input type="radio" id="comedy" name="interest" value="Comedy"> Comedy<br>
+                        <input type="radio" id="drama" name="interest" value="Drama"> Drama<br>
+                    </div>
+                </div>
+            </div>
+            <div class="button-1">
+                <button id="edit-btn">Edit</button>
+                <button id="save-btn" style="display: none;">Save Changes</button>
+                <button><a href="index.html" class="back">Back</a></button>
+            </div>
+        </div>
+    </div>
+    <script src="./js/profile.js" type="module"></script>
+    <script>
+        document.addEventListener("contextmenu", (e) => {
+            e.preventDefault();
+        })
+    </script>
+</body>
+</html>
